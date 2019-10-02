@@ -99,8 +99,11 @@
   <ItemGroup>
     <Compile Include="Arguments\Jogador\AdicionarJogadorRequest.cs" />
     <Compile Include="Arguments\Jogador\AdicionarJogadorResponse.cs" />
+    <Compile Include="Arguments\Jogador\AlterarJogadorRequest.cs" />
+    <Compile Include="Arguments\Jogador\AlterarJogadorResponse.cs" />
     <Compile Include="Arguments\Jogador\AutenticarJogadorRequest.cs" />
     <Compile Include="Arguments\Jogador\AutenticarJogadorResponse.cs" />
+    <Compile Include="Arguments\Jogador\JogadorResponse.cs" />
     <Compile Include="Arguments\Plataforma\AdicionarPlataformaRequest.cs" />
     <Compile Include="Arguments\Plataforma\AdicionarPlataformaResponse.cs" />
     <Compile Include="Entities\Jogador.cs" />
@@ -109,6 +112,7 @@
     <Compile Include="Entities\MeuJogo.cs" />
     <Compile Include="Entities\Plataforma.cs" />
     <Compile Include="Enum\EnumSituacaoJogador.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Interfaces\Arguments\IResponse.cs" />
     <Compile Include="Interfaces\Arguments\IRequest.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryJogador.cs" />
@@ -135,5 +139,6 @@
     <None Include="Diagrams\XGame.cd" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

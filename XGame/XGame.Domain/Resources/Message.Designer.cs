@@ -86,5 +86,32 @@ namespace XGame.Domain.Resources {
                 return ResourceManager.GetString("X0_INVALIDO", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} e obrigatorio adicionar um nome ..
+        /// </summary>
+        public static string X0_NOME {
+            get {
+                return ResourceManager.GetString("X0_NOME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} SENHA deve conter entre 6 e 30 chars.
+        /// </summary>
+        public static string X0_SENHA {
+            get {
+                return ResourceManager.GetString("X0_SENHA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} Operaçao realizada com sucesso.
+        /// </summary>
+        public static string X0_SUCESSO {
+            get {
+                return ResourceManager.GetString("X0_SUCESSO", resourceCulture);
+            }
+        }
     }
 }

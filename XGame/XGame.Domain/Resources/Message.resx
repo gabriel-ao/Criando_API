@@ -126,4 +126,13 @@
   <data name="X0_INVALIDO" xml:space="preserve">
     <value>{0} e invalido.</value>
   </data>
+  <data name="X0_NOME" xml:space="preserve">
+    <value>{0} e obrigatorio adicionar um nome .</value>
+  </data>
+  <data name="X0_SENHA" xml:space="preserve">
+    <value>{0} SENHA deve conter entre 6 e 30 chars</value>
+  </data>
+  <data name="X0_SUCESSO" xml:space="preserve">
+    <value>{0} Operaçao realizada com sucesso</value>
+  </data>
 </root>

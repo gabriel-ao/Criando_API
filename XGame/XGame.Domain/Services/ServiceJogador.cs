@@ -1,6 +1,8 @@
 ﻿using prmToolkit.NotificationPattern;
 using prmToolkit.NotificationPattern.Extensions;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using XGame.Domain.Arguments.Jogador;
 using XGame.Domain.Entities;
 using XGame.Domain.Interfaces.Repositories;
@@ -27,15 +29,25 @@ namespace XGame.Domain.Services
 
         public AdicionarJogadorResponse AdicionarJogador(AdicionarJogadorRequest request)
         {
-            Jogador jogador = new Jogador();
-            jogador.Email = request.Email;
-            jogador.Nome = request.Nome;
-            jogador.Status = Enum.EnumSituacaoJogador.EmAndamento;
+            var nome = new Nome(request.PrimeiroNome, request.UltimoNome);
+            var email = new Email(request.Email);
+            
 
+            Jogador jogador = new Jogador(nome, email, request.Senha);
 
-            Guid id = _repositoryJogador.AdicionarJogador(jogador);
+            if (IsValid())
+            {
+                return null;
+            }
 
-            return new AdicionarJogadorResponse() { Id = id, Message = "Operacao realizada com sucesso" };
+            jogador = _repositoryJogador.AdicionarJogador(jogador);
+
+            return (AdicionarJogadorResponse)jogador;
+        }
+
+        public AlterarJogadorResponse AlterarJogador(AlterarJogadorRequest request)
+        {
+            throw new NotImplementedException();
         }
 
         public AutenticarJogadorResponse AutenticarJogador(AutenticarJogadorRequest request)
@@ -56,9 +68,14 @@ namespace XGame.Domain.Services
                 return null;
             }
 
-            var response = _repositoryJogador.AutenticarJogador(jogador.Email.Endereco, jogador.Senha);
+            jogador = _repositoryJogador.AutenticarJogador(jogador.Email.Endereco, jogador.Senha);
 
-            return response;
+            return (AutenticarJogadorResponse)jogador;
+        }
+
+        public IEnumerable<JogadorResponse> ListaJogador()
+        {
+            return _repositoryJogador.ListarJogador().ToList().Select(jogador => (JogadorResponse)jogador).ToList();
         }
 
         private bool IsEmail(string email)
