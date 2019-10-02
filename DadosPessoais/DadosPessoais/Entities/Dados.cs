@@ -5,18 +5,8 @@ namespace DadosPessoais
 {
     public class Dados
     {
-        public Dados(Guid id, string nome, string email, EnumGenero genero, int idade)
+        public Dados(string nome, string email, EnumGenero genero, int idade, string senha)
         {
-            Id = id;
-            Nome = nome;
-            Email = email;
-            Genero = genero;
-            Idade = idade;
-        }
-
-        public Dados(Guid id, string nome, string email, EnumGenero genero, int idade, string senha)
-        {
-            Id = id;
             Nome = nome;
             Email = email;
             Genero = genero;

@@ -1,0 +1,8 @@
+﻿namespace DadosPessoais
+{
+    interface IRequest
+    {
+
+
+    }
+}

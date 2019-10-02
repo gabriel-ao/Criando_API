@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DadosPessoais
+namespace DadosPessoais.Interfaces.Arguments
 {
-    interface InterfaceUsuario
+    interface IResponse
     {
-
-
     }
 }

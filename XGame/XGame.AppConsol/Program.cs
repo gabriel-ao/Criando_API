@@ -21,20 +21,20 @@ namespace XGame.AppConsole
             //QutenticarRequest.Email = "Gabriel@oliveira.com";
             //QutenticarRequest.Senha = "7777777";
 
-            //var AdicionarRequest = new AdicionarJogadorRequest()
-            //{
-            //    Email = "gabriel.testando@outlook.com",
-            //    PrimeiroNome = "Gabriel ",
-            //    UltimoNome = "de Oliveira",
-            //    Senha = "caminhandoVarrendo"
-            //};
+            var AdicionarRequest = new AdicionarJogadorRequest()
+            {
+                Email = "gabriel.testando@outlook.com",
+                PrimeiroNome = "Gabriel ",
+                UltimoNome = "de Oliveira",
+                Senha = "caminhandoVarrendo"
+            };
 
 
-            //var response = service.AdicionarJogador(AdicionarRequest);
+            var response = service.AdicionarJogador(AdicionarRequest);
 
             //var response2 = service.AutenticarJogador(QutenticarRequest);
 
-            var result = service.ListaJogador();
+            //var result = service.ListaJogador();
 
             Console.WriteLine("Servico e valido -> " + service.IsValid());
 

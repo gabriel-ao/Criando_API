@@ -1,10 +1,6 @@
 ﻿using DadosPessoais.Services;
 using DadosPessoais.Usuario;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dados.AppConsole
 {
@@ -18,16 +14,16 @@ namespace Dados.AppConsole
             Console.WriteLine("Criei instancia do servico");
 
 
-            AdicionarUsuarioRequest request = new AdicionarUsuarioRequest()
+            var AdicionarRequest = new AdicionarUsuarioRequest()
             {
                 Nome = "Gabriel Almeida de Oliveira",
                 Email = "gabriel-ao@hormail.com",
                 Senha = "camundongos",
-                Idade = 22
-
+                Idade = 23,
+                Genero = 0
             };
 
-            var response = service.AdicionarUsuario(request);
+            var response = service.AdicionarUsuario(AdicionarRequest);
 
         }
     }
