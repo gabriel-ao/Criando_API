@@ -21,7 +21,6 @@ namespace XGame.Domain.Services
 
         }
 
-
         public ServiceJogador(IRepositoryJogador repositoryJogador)
         {
             _repositoryJogador = repositoryJogador;
@@ -47,7 +46,38 @@ namespace XGame.Domain.Services
 
         public AlterarJogadorResponse AlterarJogador(AlterarJogadorRequest request)
         {
-            throw new NotImplementedException();
+            if (request == null)
+            {
+                // notificacao caso o request esteja NULO
+                AddNotification("AlterarJogadorResponse", Message.X0_E_OBRIGATORIO.ToFormat("AlterarJogadorRequest"));
+            }
+
+            // puxa dados do banco de dados atraves do ID
+            Jogador jogador = _repositoryJogador.ObterJogadorPorId(request.Id);
+
+            // verifica se o jogador esta NULO
+            if(jogador == null)
+            {
+                AddNotification("Id", Message.NAO_HA_DADOS);
+                return null;
+            }
+
+            var email = new Email(request.Email);
+            var nome = new Nome(request.PrimeiroNome, request.UltimoNome);
+
+
+            jogador.AlterarJogador(nome, email, jogador.Status);
+
+            AddNotifications(jogador);
+
+            if (IsInvalid())
+            {
+                return null;
+            }
+
+            _repositoryJogador.AlterarJogador(jogador);
+
+            return (AlterarJogadorResponse)jogador;
         }
 
         public AutenticarJogadorResponse AutenticarJogador(AutenticarJogadorRequest request)
@@ -77,6 +107,7 @@ namespace XGame.Domain.Services
         {
             return _repositoryJogador.ListarJogador().ToList().Select(jogador => (JogadorResponse)jogador).ToList();
         }
+
 
         private bool IsEmail(string email)
         {

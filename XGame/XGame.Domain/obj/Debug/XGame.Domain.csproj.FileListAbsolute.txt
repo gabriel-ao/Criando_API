@@ -28,3 +28,7 @@ C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\bi
 C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\obj\Debug\XGame.Domain.csproj.CopyComplete
 C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\obj\Debug\XGame.Domain.Resources.Message.resources
 C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\obj\Debug\XGame.Domain.csproj.GenerateResource.cache
+C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\bin\Debug\EntityFramework.dll
+C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\bin\Debug\EntityFramework.xml
+C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\bin\Debug\EntityFramework.SqlServer.xml

@@ -117,25 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NAO_HA_DADOS" xml:space="preserve">
-    <value>{0} Dados não encontrados.</value>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAOVZzW7jNhC+F+g7CDq1QNaKsyiwNeRdeG0n8G4cB1Gy6G1BS2OHLUVqRSqwUfTJeugj9RU61P+fFdv5QYsih9jkzHDmmxnODP33n3/ZHzY+Mx4glFTwodnvnZoGcFd4lK+HZqRWb96ZH95//5099fyN8SWje6vpkJPLoXmvVDCwLOneg09kz6duKKRYqZ4rfIt4wjo7Pf3Z6vctQBEmyjIM+ybiivoQf8GvY8FdCFRE2Fx4wGS6jjtOLNW4Ij7IgLgwNH+5wM+9GV+FpHet9ZEKFQbTGDFKUB0H2Mo0COdCEYXKDu4kOCoUfO0EuEDY7TYApFsRJiE1YlCQ72vP6Zm2xyoYM1FuJJXwDxTYf5sCZNXZj4LZzAGMwfUDBhttdozj0LwSPlpeP2kwZqEmyiCe4CblvS+ERTBbLH8FV8meZj0xygQneVRg8Oi/E2McMRWFMOQQqZCwE+M6WjLqfobtrfgN+JBHjJVVRCWvQxFAqLaphtchRgcNRaJpohU6EYPSNOZkcwl8re6H5k8Yhed0A162kDr1jlMMYeRRYYRfr/A8smSQ71udhzuwjrj3GmfbVsk53T6bItbsSKfFvK/gtSn3IARXdKCGQfqCsE3xVlHbEmqfxBpTI9wbt1gABdlLGV8CNNyrLJRwvIFVqvjMa0SpVWesw695EpsuIuodHPaVeMdLtJcsHCgljdOSmHTl4CTk96QjkPDji+Q+hkckq/rzyHcoFieXiDyeHonPIhA7w/OaEUVWIvTJ4RFa8P5vg/T4qNjPW5FfvoDbwmAmzxlZF93E3k6M/La4eh5PorF4D7MtgpOcPePq7VnNwXPwlxDmSTvihFFtQVw5huZpwxEVhpGiDyIn7ncTf2TiWwRoX85w1vRAgnUzW7A1VIhFLiwGSC/CRrXgjc1eCrlMfV1VLBHqgKoWCMCUL6IgTfzcy1a3jCIT26SUc7wt7HIDi6bXSrrerDu2drTH9pwEATq51C6nK4aT9MrjN87h/aOfyLBcaXa4Iz9JiZCsobaLR6Om5zSUaoLmL4kOrbHnN8gq7twBc3ZU3WP1C6qAPuPQn0th05wach/XZBVQnqN1PnAVGwq5TkVr0eCMpxbCSNhy840Fi3y+6/ZMudPmZufN121RTNcidpda1Va7rGB1p03VXTIrHXRZZGWj1XirZv3+AJU6j26EEsIDzCn62rIt6XlHW7EDubjtqWIWL7We0y4j7WEqQtK1phTbqkV6Pa2sRl7VSn49UfdK4/Kl+RyJXLpmD8/lLuYnp3MrdzM1duXEi/qnUYTqJPnpeTGqFR07LQCPP9w0KkJCYhoIzQP1dDVwtuhNv6cJes43NmYU7S0I5oTTFUiV9Do4S/bPas8+/54nGEtKj7UU0Jbh9NU774hTbMgQUdRoReGxcWa/5xn+QEL3noSNR5Knv748l+jKbFoIbTSRM7zvN0Pz95htYNx9/vppcTGaLG6+Tuej2eUJtv13MYQD4xZbTOOP5hPHU6bdTLMffLL58YkTLNX58+zD6n8vYtvCqYHvIbNh22zS7Hn3Gj66Ro/kjhya3lK/qiVqHj6XPDKWtB1SGWqOnFuapcG2yi//9gQkXRci9O8AHFydg4XQjAZLvsicijaWNcpIaj6fgyIeWjEKMWiIq3DbBSnjN4N0EJ3imOrN+CJSQaRGUuLYyrZle22r+/x4OKvqbC8C/U0+hwmoJkUTYME/RpR5ud7nLXm8Q4QOygvA9fhucxT+h/U2l3Ql+J6CUvgmEADXiXgL2OKiMLngDnmAY3TDaf0S1sTdZhV+t5DHHVGF3Z5Qsg6JL1MZBb/+NcvSP2e9/wf0xFdDABsAAA==</value>
   </data>
-  <data name="X0_E_OBRIGATORIO" xml:space="preserve">
-    <value>{0} é obrigatorio.</value>
-  </data>
-  <data name="X0_INVALIDA" xml:space="preserve">
-    <value>{0} e invalida.</value>
-  </data>
-  <data name="X0_INVALIDO" xml:space="preserve">
-    <value>{0} e invalido.</value>
-  </data>
-  <data name="X0_NOME" xml:space="preserve">
-    <value>{0} e obrigatorio adicionar um nome .</value>
-  </data>
-  <data name="X0_SENHA" xml:space="preserve">
-    <value>{0} SENHA deve conter entre 6 e 30 chars</value>
-  </data>
-  <data name="X0_SUCESSO" xml:space="preserve">
-    <value>{0} Operaçao realizada com sucesso</value>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
   </data>
 </root>

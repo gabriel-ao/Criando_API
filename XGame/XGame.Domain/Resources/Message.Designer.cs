@@ -61,6 +61,15 @@ namespace XGame.Domain.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} Dados não encontrados..
+        /// </summary>
+        public static string NAO_HA_DADOS {
+            get {
+                return ResourceManager.GetString("NAO_HA_DADOS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} é obrigatorio..
         /// </summary>
         public static string X0_E_OBRIGATORIO {
