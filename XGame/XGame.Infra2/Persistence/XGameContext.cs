@@ -24,6 +24,8 @@ namespace XGame.Infra.Persistence
             //modelBuilder.Configurations.Add(new PlataformaMap());
 
             modelBuilder.Configurations.AddFromAssembly(typeof(XGameContext).Assembly);
+
+
         }
 
     }
