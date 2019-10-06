@@ -3,6 +3,7 @@ using prmToolkit.NotificationPattern.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using XGame.Domain.Arguments.Base;
 using XGame.Domain.Arguments.Jogador;
 using XGame.Domain.Entities;
 using XGame.Domain.Interfaces.Repositories;
@@ -39,7 +40,7 @@ namespace XGame.Domain.Services
                 return null;
             }
 
-            jogador = _repositoryJogador.AdicionarJogador(jogador);
+            jogador = _repositoryJogador.Adicionar(jogador);
 
             return (AdicionarJogadorResponse)jogador;
         }
@@ -53,7 +54,7 @@ namespace XGame.Domain.Services
             }
 
             // puxa dados do banco de dados atraves do ID
-            Jogador jogador = _repositoryJogador.ObterJogadorPorId(request.Id);
+            Jogador jogador = _repositoryJogador.ObterPorId(request.Id);
 
             // verifica se o jogador esta NULO
             if(jogador == null)
@@ -75,7 +76,7 @@ namespace XGame.Domain.Services
                 return null;
             }
 
-            _repositoryJogador.AlterarJogador(jogador);
+            _repositoryJogador.Editar(jogador);
 
             return (AlterarJogadorResponse)jogador;
         }
@@ -98,20 +99,37 @@ namespace XGame.Domain.Services
                 return null;
             }
 
-            jogador = _repositoryJogador.AutenticarJogador(jogador.Email.Endereco, jogador.Senha);
+            jogador = _repositoryJogador.ObterPor(x=>x.Email.Endereco == jogador.Email.Endereco, x=>x.Senha == jogador.Senha);
+
 
             return (AutenticarJogadorResponse)jogador;
         }
 
         public IEnumerable<JogadorResponse> ListaJogador()
         {
-            return _repositoryJogador.ListarJogador().ToList().Select(jogador => (JogadorResponse)jogador).ToList();
-        }
 
+            return _repositoryJogador.Listar().Select(jogador => (JogadorResponse)jogador).ToList();
+        }
 
         private bool IsEmail(string email)
         {
             return false;
         }
+
+        public ReponseBase ExcluirJogador(Guid id)
+        {
+            Jogador jogador = _repositoryJogador.ObterPorId(id);
+
+            if(jogador == null)
+            {
+                AddNotification("Id", Message.NAO_HA_DADOS);
+                return null;
+            }
+
+            _repositoryJogador.Remover(jogador);
+
+            return new ReponseBase() { Message = Message.X0_SUCESSO };
+        }
+
     }
 }

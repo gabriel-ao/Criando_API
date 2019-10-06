@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using XGame.Domain.Arguments.Jogador;
 using XGame.Domain.Entities;
+using XGame.Domain.Interfaces.Repositories.Base;
 
 namespace XGame.Domain.Interfaces.Repositories
 {
-    public interface IRepositoryJogador
+    public interface IRepositoryJogador : IRepositoryBase<Jogador, Guid>
     {
-        Jogador AutenticarJogador(string Email, string Senha);
+        //Jogador AutenticarJogador(string Email, string Senha);
 
-        Jogador AdicionarJogador(Jogador jogador);
+        //Jogador AdicionarJogador(Jogador jogador);
 
-        IEnumerable<Jogador> ListarJogador();
+        //IEnumerable<Jogador> ListarJogador();
 
-        Jogador ObterJogadorPorId(Guid Id);
+        //Jogador ObterJogadorPorId(Guid Id);
 
-        void AlterarJogador(Jogador jogador);
+        //void AlterarJogador(Jogador jogador);
     }
 }
