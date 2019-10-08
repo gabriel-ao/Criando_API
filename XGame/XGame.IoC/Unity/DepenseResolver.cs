@@ -1,7 +1,5 @@
-﻿using Microsoft.Practices.Unity;
-using prmToolkit.NotificationPattern;
+﻿using prmToolkit.NotificationPattern;
 using System.Data.Entity;
-using System.Runtime.Remoting.Contexts;
 using Unity;
 using Unity.Lifetime;
 using XGame.Domain.Interfaces.Repositories;
@@ -9,10 +7,10 @@ using XGame.Domain.Interfaces.Repositories.Base;
 using XGame.Domain.Interfaces.Services;
 using XGame.Domain.Services;
 using XGame.Infra.Persistence;
-using XGame.Infra.Persistence.Repositories;
 using XGame.Infra.Persistence.Repositories.Base;
 using XGame.Infra.Transactions;
 using XGame.Infra2.Persistence.Repositories;
+using XGame.Infra2.Transactions;
 
 namespace XGame.IoC.Unity
 {

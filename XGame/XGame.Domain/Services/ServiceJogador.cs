@@ -35,7 +35,9 @@ namespace XGame.Domain.Services
 
             Jogador jogador = new Jogador(nome, email, request.Senha);
 
-            if (IsValid())
+            AddNotifications(nome, email);
+
+            if (this.IsInvalid())
             {
                 return null;
             }
