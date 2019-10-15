@@ -119,4 +119,3 @@ C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\ob
 C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\obj\Debug\XGame.Domain.csproj.CopyComplete
 C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\obj\Debug\XGame.Domain.dll
 C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\obj\Debug\XGame.Domain.pdb
-C:\Users\GABRIELALMEIDADEOLIV\Documents\GitHub\Criando_API\XGame\XGame.Domain\obj\Debug\XGame.Domain.csprojAssemblyReference.cache

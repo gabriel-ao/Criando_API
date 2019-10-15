@@ -6,6 +6,11 @@ namespace XGame.Domain.ValueIObjects
 {
     public class Nome : Notifiable
     {
+
+        protected Nome()
+        {
+
+        }
         public Nome(string primeiroNome, string segundoNome)
         {
             PrimeiroNome = primeiroNome;

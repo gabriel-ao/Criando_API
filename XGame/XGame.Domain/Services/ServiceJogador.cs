@@ -29,13 +29,13 @@ namespace XGame.Domain.Services
 
         public AdicionarJogadorResponse AdicionarJogador(AdicionarJogadorRequest request)
         {
-            var nome = new Nome(request.PrimeiroNome, request.UltimoNome);
+
             var email = new Email(request.Email);
             
 
-            Jogador jogador = new Jogador(nome, email, request.Senha);
+            Jogador jogador = new Jogador(request.Nome, email, request.Senha);
 
-            AddNotifications(nome, email);
+            AddNotifications(request.Nome, email);
 
             if (this.IsInvalid())
             {

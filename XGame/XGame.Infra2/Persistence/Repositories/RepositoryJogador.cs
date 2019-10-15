@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using XGame.Domain.Entities;
 using XGame.Domain.Interfaces.Repositories;
 using XGame.Infra.Persistence;
-using System.Data.Entity;
-using XGame.Domain.Interfaces.Repositories.Base;
 using XGame.Infra.Persistence.Repositories.Base;
 
 namespace XGame.Infra2.Persistence.Repositories
@@ -49,7 +45,7 @@ namespace XGame.Infra2.Persistence.Repositories
         //}
 
 
-        // professor do curso apagou, deixar anotado para utilizar no futuro
+        //// professor do curso apagou, deixar anotado para utilizar no futuro
         //public int CalcularJogadores()
         //{
 
@@ -57,7 +53,7 @@ namespace XGame.Infra2.Persistence.Repositories
         //    string ultimoNome = "Oliveira";
         //    string sexo = string.Empty;
 
-        //    // utilizado para melhorar performance, monta a query antes do banco de dados
+        ////    // utilizado para melhorar performance, monta a query antes do banco de dados
         //    IQueryable<Jogador> jogadores = _context.Jogadores.AsNoTracking().AsQueryable();
 
         //    if (!string.IsNullOrEmpty(nome))
@@ -75,7 +71,7 @@ namespace XGame.Infra2.Persistence.Repositories
         //        var jogadoresFiltro = jogadores.Where(x => x.Nome.PrimeiroNome.StartsWith(sexo));
         //    }
 
-        //    // consulta no banco mais rapida, com asParallel  - toList listando nomes
+        ////    // consulta no banco mais rapida, com asParallel  - toList listando nomes
         //    return jogadores.AsParallel().ToList().Count();
         //}
 
